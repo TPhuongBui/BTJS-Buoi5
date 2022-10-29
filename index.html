@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,25 +11,114 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 </head>
+
 <body>
-    
+
+    <!-- BÀI TẬP 1 -->
+    <div class="container pt-5">
+    <h2>Quản Lí Tuyển Sinh</h2>
+
+        <form>
+            <div class="form-group pb-3">
+                <p>Nhập điểm chuẩn</p>
+                <input type="number" class="form-control" id="diemChuan">
+            </div>
+        </form>
+
+        <form>
+            <div class="form-group pb-1">
+                <label for="">Khu Vực</label>
+                <!-- dropdown, combobox -->
+                <select class="form-control" id="khuVuc">
+                    <option value="0">Chọn khu vực</option>
+                    <option value="0">X</option>
+                    <option value="2">Khu vực A</option>
+                    <option value="1">Khu vực B</option>
+                    <option value="0.5">Khu vực C</option>
+                </select>
+            </div>
+        </form>
+
+
+        <form>
+            <div class="form-group pb-1">
+                <label for="">Đối tượng ưu tiên</label>
+                <!-- dropdown, combobox -->
+                <select class="form-control" id="doiTuong">
+                    <option value="0">Chọn đối tượng</option>
+                    <option value="0">0</option>
+                    <option value="2.5">Đối tượng 1</option>
+                    <option value="1.5">Đối tượng 2</option>
+                    <option value="1">Đối tượng 3</option>
+                </select>
+            </div>
+        </form>
+
+        <form>
+            <div class="form-group pb-1">
+                <p>Nhập điểm toán</p>
+                <input type="number" class="form-control" id="diemToan">
+            </div>
+        </form>
+
+        <form>
+            <div class="form-group pb-3">
+                <p>Nhập điểm văn</p>
+                <input type="number" class="form-control" id="diemVan">
+            </div>
+        </form>
+
+        <form>
+            <div class="form-group pb-3">
+                <p>Nhập điểm anh văn</p>
+                <input type="number" class="form-control" id="diemENG">
+            </div>
+        </form>
+
+        <div>
+            <p class="alert alert-danger" id="txtKetQua"></p>
+            <button type="button" class="btn btn-danger" id="btnResult">Kết quả</button>
+        </div>
+
+    </div>
 
 
 
+    <!-- BÀI TẬP 2 -->
+    <div class="container py-5">
+        <h2>Tính Tiền Điện</h2>
+        <form>
+            <div class="form-group pb-3">
+                <p>Họ và tên</p>
+                <input type="text" class="form-control" id="tenKH">
+            </div>
+        </form>
 
+        <form>
+            <div class="form-group pb-3">
+                <p>Lượng điện tiêu thụ</p>
+                <input type="number" class="form-control" id="dienTieuThu">
+            </div>
+        </form>
 
+        <div>
+            <p class="alert alert-danger" id="txtSoTien"></p>
+            <button type="button" class="btn btn-danger" id="btnSoTien">Tính tiền điện</button>
+        </div>
+    </div>
 
-        <!-- JS BÀI TẬP -->
-        <script src="./js/bai1.js"></script>
-        <!-- <script src="./js/bai2.js"></script> -->
-    
-        <!-- JS BOOTSTRAP -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-    
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-            crossorigin="anonymous"></script>
+    <!-- JS BÀI TẬP -->
+    <!-- <script src="./js/bai1.js"></script> -->
+    <script src="./js/bai2.js"></script>
+
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
